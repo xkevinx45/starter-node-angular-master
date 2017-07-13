@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Christian Housekeeping</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- custom styles -->
+
+    <!-- JS -->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="js/controllers/MainCtrl.js"></script>
+    <script src="js/controllers/NerdCtrl.js"></script>
+    <script src="js/services/NerdService.js"></script>
+    <script src="js/controllers/GeekCtrl.js"></script>
+    <script src="js/services/GeekService.js"></script>
+    <script src="js/appRoutes.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body ng-app="sampleApp" ng-controller="NerdController">
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <!-- ScrollSpy -->
+
+        <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Christian Housekeeping</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#work">Our Work</a></li>
+                    <li><a href="#price">Pricing</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- ANGULAR DYNAMIC CONTENT -->
+            <div ng-view></div>
+        </body>
+    </div>
+</body>
+
+</html>
